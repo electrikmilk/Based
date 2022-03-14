@@ -1,0 +1,70 @@
+/*
+ * style.css
+ *
+ * @author brandonjordan
+ * @datetime 3/12/2022 22:2
+ * @copyright (c) 2022 Brandon Jordan
+ */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 1.6;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+	line-height: 1.2;
+}
+
+.subheader {
+	font-weight: bold;
+	color: #555555;
+}
+
+.subtext {
+	color: #888888;
+}
+
+main {
+	display: grid;
+	grid-template-columns: auto 50vw;
+}
+
+header {
+	grid-column: 1 / 4;
+}
+
+nav {
+}
+
+aside {
+}
+
+section {
+	background: #fafafa;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table thead tr {
+	background: #eeeeee;
+}
+
+table tbody {
+	background: #ffffff;
+}
+
+table tbody tr {
+}
+
+table thead th, table tbody td {
+	padding: 5px;
+}
+
+table tbody tr:nth-child(:even) {
+	background-color: #f5f5f5;
+}
