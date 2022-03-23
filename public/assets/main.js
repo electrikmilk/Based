@@ -2,7 +2,7 @@
  * main.js
  *
  * @author brandonjordan
- * @datetime 3/12/2022 22:1
+ * @datetime 3/22/2022 23:53
  * @copyright (c) 2022 Brandon Jordan
  */
 
@@ -22,8 +22,12 @@ function load_tree() {
 			action: "tree"
 		},
 		success: function (response) {
-			console.log(response);
 			$("aside ul").html(response);
+			$("aside ul li a").on("click", function () {
+				$(this).parent().find("ul").slideToggle();
+				let toggle = $(this).find("span");
+				toggle.text((toggle.text() === "+") ? "-" : "+");
+			});
 		},
 		error: function (error) {
 			console.error(error);

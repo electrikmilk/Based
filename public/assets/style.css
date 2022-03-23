@@ -2,7 +2,7 @@
  * style.css
  *
  * @author brandonjordan
- * @datetime 3/12/2022 22:2
+ * @datetime 3/22/2022 23:54
  * @copyright (c) 2022 Brandon Jordan
  */
 body {
@@ -38,7 +38,17 @@ header {
 nav {
 }
 
-aside {
+aside ul {
+	padding: 0;
+	margin: 0;
+}
+
+aside ul li ul {
+	display: none;
+}
+
+aside ul li ul li {
+	margin-left: 40px;
 }
 
 section {
